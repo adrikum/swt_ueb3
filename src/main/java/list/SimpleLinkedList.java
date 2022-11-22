@@ -2,6 +2,7 @@
  * (c) 2013-2021  Heinrich Hussmann und Uwe Aßmann, TU Dresden
  */
 
+package list;
 import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.Iterator;
