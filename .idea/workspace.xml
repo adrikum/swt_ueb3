@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b92f5dc6-1507-4c07-bc15-9cc93ed8414e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b92f5dc6-1507-4c07-bc15-9cc93ed8414e" name="Changes" comment="- fixed bugs in SimpleLinkedList&#10;- added SimpleLinkedListTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SimpleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SimpleLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +111,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668501721220</updated>
     </task>
+    <task id="LOCAL-00001" summary="- fixed bugs in SimpleLinkedList&#10;- added SimpleLinkedListTest">
+      <created>1668604782198</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668604782198</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +132,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- fixed bugs in SimpleLinkedList&#10;- added SimpleLinkedListTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed bugs in SimpleLinkedList&#10;- added SimpleLinkedListTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
