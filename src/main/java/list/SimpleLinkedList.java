@@ -47,7 +47,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
         private Elem current;
 
         public Iter() {
-            current = start;
+            current = new Elem(null, start);
         }
 
         @Override

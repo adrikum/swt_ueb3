@@ -9,6 +9,17 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+
+        List<Integer> javaList = new ArrayList<>();
+        javaList.add(1);
+        javaList.add(2);
+        javaList.add(3);
+
+        System.out.println("size: " + javaList.size());
+        Iterator<Integer> jit = javaList.iterator();
+        //jit.remove();
+
+
         SimpleLinkedList<Integer> list = new SimpleLinkedList<>();
         list.add(1);
         list.add(2);

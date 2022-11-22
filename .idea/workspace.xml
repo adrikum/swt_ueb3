@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b92f5dc6-1507-4c07-bc15-9cc93ed8414e" name="Changes" comment="added jacoco maven plugin">
+    <list default="true" id="b92f5dc6-1507-4c07-bc15-9cc93ed8414e" name="Changes" comment="fixed hasNext() function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/list/SimpleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/list/SimpleLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669102529575</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="removed semicolon after if clause">
+      <created>1669103452526</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669103452526</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed hasNext() function">
+      <created>1669103485122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669103485122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,7 +104,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added jacoco maven plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="added jacoco maven plugin" />
+    <MESSAGE value="removed semicolon after if clause" />
+    <MESSAGE value="fixed hasNext() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed hasNext() function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
