@@ -52,7 +52,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 
         @Override
         public boolean hasNext() {
-            return current != null;
+            return current.next != null;
         }
 
         @Override
