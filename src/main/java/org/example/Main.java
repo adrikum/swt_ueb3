@@ -20,10 +20,16 @@ public class Main {
         while(it.hasNext()) {
             int i = it.next();
             System.out.println(i);
-            if(i != 3) it.remove();
+            it.remove();
         }
 
         System.out.println("size: " + list.size());
+        System.out.println(list);
+
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
         System.out.println(list);
     }
 }

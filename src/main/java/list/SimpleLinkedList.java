@@ -46,13 +46,13 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
     }
 
     private class Iter implements Iterator<E> {
-        private Elem current;
-        private Elem prev;
-        private boolean removed;
+        private Elem current;       // current element
+        private Elem prev;          // previous element, needed for removal
+        private boolean removed;    // true if current element was removed
 
         public Iter() {
             prev = null;
-            current = new Elem(null, start);
+            current = new Elem(null, start);    // temporary helper element
             removed = false;
         }
 
@@ -66,24 +66,37 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
+
+            // when current element wasn't removed increment the prev
             if(!removed) prev = current;
             else removed = false;
-            Elem testing = current;
+
+            // increment current element and return value
             current = current.next;
             return current.elem;
         }
 
         @Override
         public void remove() {
+            // if current element was already removed or
+            // next() wasn't called at least one time, throw exception
             if(removed || prev == null) {
-                throw new IllegalStateException("current element was already removed");
+                throw new IllegalStateException();
+            // if current element is the head of the list, update start
             } else if(current == start) {
                 start = start.next;
             }
 
+            // relocate pointer and update variables
             prev.next = current.next;
             removed = true;
             size--;
+
+            // if current element is the end, update the end pointer
+            if(current == end) {
+                if(size == 0) end = null;
+                else end = prev;
+            }
         }
     }
 

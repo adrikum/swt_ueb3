@@ -7,10 +7,15 @@ import java.util.Iterator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+TODO Cong Linh:
+    1. list.add(e) gibt true zurück
+ */
+
 public class AddTest {
 
     @Test
-    void add() {
+    void containsAllElementsAndCorrectOrder() {
         SimpleLinkedList<Integer> list = new SimpleLinkedList<>();
         list.add(1);
         list.add(5);
