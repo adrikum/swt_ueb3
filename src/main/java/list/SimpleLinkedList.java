@@ -45,31 +45,59 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 
     private class Iter implements Iterator<E> {
         private Elem current;
+        private Elem prev;
+        private boolean removed;
 
         public Iter() {
-            current = start;
+            prev = null;
+            current = new Elem(null, start);
+            removed = false;
         }
 
         @Override
         public boolean hasNext() {
-            return current != null;
+            return current.next != null;
         }
 
         @Override
         public E next() {
-            E value = current.elem;
+            if(!removed) prev = current;
+            else removed = false;
             current = current.next;
-            return value;
+            return current.elem;
         }
 
         @Override
         public void remove() {
-            throw new UnsupportedOperationException();
+            if(removed || prev == null) {
+                throw new IllegalStateException("current element was already removed");
+            } else if(current == start) {
+                start = start.next;
+            }
+
+            prev.next = current.next;
+            removed = true;
+            size--;
         }
     }
 
     @Override
     public Iterator<E> iterator() {
         return new Iter();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder("[");
+        boolean first = true;
+
+        for(E e : this) {
+            if(first) first = false;
+            else str.append(", ");
+            str.append(e);
+        }
+
+        str.append("]");
+        return str.toString();
     }
 }
