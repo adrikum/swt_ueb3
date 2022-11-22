@@ -35,9 +35,8 @@ public class IteratorTest {
         assertFalse(it.hasNext());
 
         //remove()
-        Exception exception = assertThrows(UnsupportedOperationException.class, () ->
-                it.remove());
-        assertEquals(null, exception.getMessage());
+        it.remove();
+        assertEquals(list.size(), 1);
     }
 
 }
