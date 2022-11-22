@@ -1,4 +1,4 @@
-/*
+package list;/*
  * (c) 2013-2021  Heinrich Hussmann und Uwe Aßmann, TU Dresden
  */
 
@@ -30,7 +30,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
         if (start == null) {
             start = e;
         }
-        if (end != null); {
+        if (end != null) {
             end.next = e;
         }
         end = e;

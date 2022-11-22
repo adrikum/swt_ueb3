@@ -1,5 +1,7 @@
 package org.example;
 
+import list.SimpleLinkedList;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        List<Integer> list = new ArrayList<>();
+        SimpleLinkedList<Integer> list = new SimpleLinkedList<>();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -17,7 +19,7 @@ public class Main {
         while(it.hasNext()) {
             int i = it.next();
             System.out.println(i);
-            it.remove();
+            //it.remove();
         }
         System.out.println("size: " + list.size());
     }
