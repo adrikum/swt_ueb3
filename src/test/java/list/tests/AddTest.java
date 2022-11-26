@@ -8,11 +8,6 @@ import java.util.Iterator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/*
-TODO Cong Linh:
-    1. list.add(e) gibt true zurück
- */
-
 public class AddTest {
 
     @Test
