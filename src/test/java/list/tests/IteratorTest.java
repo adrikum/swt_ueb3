@@ -42,7 +42,7 @@ public class IteratorTest {
 
         Iterator<Integer> it = list.iterator();
         for(int i = 0; i < 5; i++) {
-            assertEquals(it.next(), i);
+            assertEquals(i, it.next());
         }
     }
 
@@ -82,7 +82,7 @@ public class IteratorTest {
         it.remove();
 
         // first element should be 1 now
-        assertEquals(list.iterator().next(), 1);
+        assertEquals(1, list.iterator().next());
     }
 
     @Test
@@ -100,7 +100,7 @@ public class IteratorTest {
         int i = 0;
         for(Iterator<Integer> it = list.iterator(); it.hasNext();) {
             if(i == 4) fail("last element is still in the list");
-            assertEquals(it.next(), i++);
+            assertEquals(i++, it.next());
         }
     }
 
@@ -128,7 +128,7 @@ public class IteratorTest {
         // validate list content
         Iterator<Integer> it = simpleLinkedList.iterator();
         for(int i : builtInList) {
-            assertEquals(it.next(), i);
+            assertEquals(i, it.next());
         }
 
         // validate no more elements
